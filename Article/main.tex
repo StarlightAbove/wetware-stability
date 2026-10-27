@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\title{ Stabilizing Cortical Wetware by Natural Algorithm Optimization }
+\author{Eliza Kishan\\
+	\small BSc '27, Department of Computer Science and Department of Biology, McGill University \\
+	\small \texttt{eliza.kishan@mail.mcgill.ca}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Briefly summarize the research question, methods, principal results, and conclusions.
+\end{abstract}
+
+\section{Introduction}
+Cortical wetware is the use of human neurons, typically derived from iPSC stem cells, due to recent developments in both ease and efficiency in the chemical
+method \cite{ipscneuron}.
+
+\section{Related Work}
+
+
+\section{Methods}
+\subsection{Data, preprocessing and in-silico model definition}
+
+The entire analysis is performed using a 1000-neuron connected cell-network
+within an extracellular matrix, all simulated using NetPyNE and NEURON \cite{neuron} \cite{netpyne}. The set-up for the cell
+was based upon the need to develop close-to-reality exchange of ions and GABA receptor dynamics which induce the unstable activity
+we wish to resolve. 
+
+Seizure models were deried from single-cell models, which are then applied to the wider system. In order to systematize the single-cell models,
+NetPyNE was parameterized to adopt <fill in here>.
+
+\subsection{Analysis}
+The "accuracy" or performance of the model was evaluated based on specific parameters.
+
+
+\subsection{Algorithms}
+\subsubsection{Neural Nets}
+\subsubsection{Ant Colony Optimization}
+\subsubsection{Bee Colony Optimization}
+\subsubsection{Artificial Immune Systems}
+\subsubsection{Firefly Algorithms}
+\subsubsection{Particle Swarm Optimization \& Genetic Algorithms}
+
+
+\section{Results}
+Present the findings without interpretation. Use tables and figures as needed (e.g., \cref{fig:example}).
+
+\begin{table}[ht]
+	\centering
+	\caption{Example results table.}
+	\label{tab:results}
+	\begin{tabular}{lcc}
+		\toprule
+		Method & Metric 1 & Metric 2 \\
+		\midrule
+		Baseline & -- & -- \\
+		Proposed & -- & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{figure}[ht]
+	\centering
+	% \includegraphics[width=0.8\textwidth]{figures/example}
+	\caption{Example figure caption.}
+	\label{fig:example}
+\end{figure}
+
+\section{Discussion}
+Interpret the results, compare them with prior work, and discuss implications.
+
+\section{Limitations}
+Describe assumptions, sources of uncertainty, and limitations of the study.
+
+\section{Conclusion}
+Summarize the main findings and identify promising directions for future work.
+
+\section*{Acknowledgments}
+This work was conducted as a final project for COMP 599, a topics course at the Dept. of Computer Science, McGill University. I thank Dr. Waldispuhl for
+his support and guidance during this project. 
+
+\subsection*{Code Availability}
+Code of the wetware simulator and of the different stabilization algorithms is available publicly at the GitHub link: https://github.com/StarlightAbove/wetware-stability. All work and code is protected by
+the MIT License.
+
+\subsection*{AI Declaration}
+Some of the codebase was developed and debugged via the use of Claude Opus 5.5 at high effort, a LLM from Anthropic PBC, San Francisco. Some literature search was conducted by 
+Claude Sonnet 5.5 at high effort. All writing and conception was done by hand.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+
+\bibitem{ipscneuron}
+Zhang, Yingsha et al. “Rapid single-step induction of functional neurons from human pluripotent stem cells.” Neuron vol. 78,5 (2013): 785-98. doi:10.1016/j.neuron.2013.05.029.
+
+\bibitem{neuron}
+Hines, Michael, Thomas Carnevale, and Robert A. McDougal. "NEURON Simulation Environment." Encyclopedia of Computational Neuroscience, edited by Dieter Jaeger and Ranu Jung, Springer, 2022, doi: 10.1007/978-1-0716-1006-0\_795.
+
+\bibitem{netpyne}
+Dura-Bernal, Salvador et al. “NetPyNE, a tool for data-driven multiscale modeling of brain circuits.” eLife vol. 8 e44494. 26 Apr. 2019, doi:10.7554/eLife.44494.
+
+\end{thebibliography}
+
+\end{document}
