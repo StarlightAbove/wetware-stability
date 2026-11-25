@@ -44,17 +44,26 @@ we wish to resolve.
 Seizure models were deried from single-cell models, which are then applied to the wider system. In order to systematize the single-cell models,
 NetPyNE was parameterized to adopt <fill in here>.
 
+\subsubsection*{Description of Server Used For Processing}
+All analysis and simulations were run on a desktop machine with a 4-core 8-thread CPU (AMD, San Francisco), and accelerated and parallelized via the CUDA technology (Nvidia Technologies, San Francisco) via a RTX 3050.
+All absolute speed estimates are provided based on these simulations being run on a similar machine.
+
 \subsection{Analysis}
-The "accuracy" or performance of the model was evaluated based on specific parameters.
+The performance of the model was evaluated based on specific parameters. The paramters were spread between more computational efficiency,
+biological safety and adaptive learning. These wide themes were chosen based upon the considerations of value in implementation of these algorithms.
+By reducing computational footprint, it allows for edge computing to use such software on larger datasets (in these case, large organoids). Biological
+safety is essential given that an extreme increase in temperature causes faster degradation of neurons, affecting logevity and economic viability of wetware. Finally,
+given that running software on such cortical wetware necessarily causes adaptation, the algorithm must not cause a form of extremely static 
+homeostatis, but rather adaptively understand what is expected as normal activity versus damaging activity.
 
 
 \subsection{Algorithms}
-\subsubsection{Neural Nets}
-\subsubsection{Ant Colony Optimization}
-\subsubsection{Bee Colony Optimization}
-\subsubsection{Artificial Immune Systems}
-\subsubsection{Firefly Algorithms}
-\subsubsection{Particle Swarm Optimization \& Genetic Algorithms}
+\subsubsection*{Neural Nets}
+\subsubsection*{Ant Colony Optimization}
+\subsubsection*{Bee Colony Optimization}
+\subsubsection*{Artificial Immune Systems}
+\subsubsection*{Firefly Algorithms}
+\subsubsection*{Particle Swarm Optimization \& Genetic Algorithms}
 
 
 \section{Results}
@@ -91,8 +100,8 @@ Describe assumptions, sources of uncertainty, and limitations of the study.
 Summarize the main findings and identify promising directions for future work.
 
 \section*{Acknowledgments}
-This work was conducted as a final project for COMP 599, a topics course at the Dept. of Computer Science, McGill University. I thank Dr. Waldispuhl for
-his support and guidance during this project. 
+This work was conducted as a final project for COMP 599, a topics course at the Department of Computer Science, McGill University. The specific topic of the course was 
+"Natural Computing". I thank Dr Waldispuhl for his support and guidance during this project. 
 
 \subsection*{Code Availability}
 Code of the wetware simulator and of the different stabilization algorithms is available publicly at the GitHub link: https://github.com/StarlightAbove/wetware-stability. All work and code is protected by
